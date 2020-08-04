@@ -31,7 +31,6 @@ function draw() {
 
    let sub = message.substring(index, index + 1);
   c=c+sub;
-  text(c, width / 2, height / 2);
 
   index++;
 
@@ -42,7 +41,7 @@ function draw() {
   
   // write the text in black and get its bounding box
   fill(0);
-  text(message, x, y);
+  text(c, x, y);
   bounds = font.textBounds(message, x, y, fontsize);
 
   // check if the mouse is inside the bounding box and tickle if so
