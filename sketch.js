@@ -3,14 +3,16 @@ let message = 'Henka Studios',
   bounds, // holds x, y, w, h of the text's bounding box
   fontsize = 60,
   x,
-  y; // x and y coordinates of the text
+  y;// x and y coordinates of the text
 
 function preload() {
   font = loadFont('assets/Lobster.otf');
 }
 
 function setup() {
+	
   createCanvas(710, 400);
+
 
   // set up the font
   textFont(font);
@@ -23,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background(204, 120);
+  background(179,216,230);
 
   // write the text in black and get its bounding box
   fill(0);
