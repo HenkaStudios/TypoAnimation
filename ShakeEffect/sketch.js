@@ -40,7 +40,7 @@ function draw() {
   }
   
   // write the text in black and get its bounding box
-  fill(39,41,97);
+  fill(0);
   text(c, x, y);
   bounds = font.textBounds(message, x, y, fontsize);
 
@@ -51,7 +51,7 @@ function draw() {
     mouseY >= bounds.y &&
     mouseY <= bounds.y + bounds.h
   ) {
-    x += random(-2, 2);
-    y += random(-2, 2);
+    x += random(-3, 3);
+    y += random(-3, 3);
   }
 }
