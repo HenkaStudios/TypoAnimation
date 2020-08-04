@@ -15,7 +15,7 @@ function setup() {
 	
   createCanvas(windowWidth, windowHeight);
 
-  frameRate(12);
+  frameRate(10);
   // set up the font
   textFont(font);
   textSize(fontsize);
