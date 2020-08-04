@@ -27,7 +27,7 @@ frameRate(10);
 }
 
 function draw() {
-  background(179,216,230);
+  background(230,209,171);
 
    let sub = message.substring(index, index + 1);
   c=c+sub;
@@ -40,7 +40,7 @@ function draw() {
   }
   
   // write the text in black and get its bounding box
-  fill(0);
+  fill(39,41,97);
   text(c, x, y);
   bounds = font.textBounds(message, x, y, fontsize);
 
