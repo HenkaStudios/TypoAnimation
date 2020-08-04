@@ -39,7 +39,7 @@ function draw() {
     mouseY >= bounds.y &&
     mouseY <= bounds.y + bounds.h
   ) {
-    x += random(-5, 5);
-    y += random(-5, 5);
+    x += random(-2, 2);
+    y += random(-2, 2);
   }
 }
