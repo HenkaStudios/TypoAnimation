@@ -1,3 +1,5 @@
+let index = 0;
+let c="";
 let message = 'Henka Studios',
   font,
   bounds, // holds x, y, w, h of the text's bounding box
@@ -27,6 +29,17 @@ function setup() {
 function draw() {
   background(179,216,230);
 
+   let sub = sourceText.substring(index, index + 1);
+  c=c+sub;
+  text(c, width / 2, height / 2);
+
+  index++;
+
+  if (index > sourceText.length) {
+    index = 0;
+    c="";
+  }
+  
   // write the text in black and get its bounding box
   fill(0);
   text(message, x, y);
