@@ -15,7 +15,7 @@ function setup() {
 	
   createCanvas(windowWidth, windowHeight);
 
-  frameRate(8);
+  frameRate(12);
   // set up the font
   textFont(font);
   textSize(fontsize);
@@ -51,7 +51,7 @@ function draw() {
     mouseY >= bounds.y &&
     mouseY <= bounds.y + bounds.h
   ) {
-    x += random(-3, 3);
-    y += random(-3, 3);
+    x += random(-2, 2);
+    y += random(-2, 2);
   }
 }
