@@ -29,13 +29,13 @@ function setup() {
 function draw() {
   background(179,216,230);
 
-   let sub = sourceText.substring(index, index + 1);
+   let sub = message.substring(index, index + 1);
   c=c+sub;
   text(c, width / 2, height / 2);
 
   index++;
 
-  if (index > sourceText.length) {
+  if (index > message.length) {
     index = 0;
     c="";
   }
